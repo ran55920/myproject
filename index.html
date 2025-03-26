@@ -1,48 +1,62 @@
-<!DOCTYPE html>
-<html lang="ar">
+
+
+   <!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عيادتنا الطبية</title>
-    <link rel="stylesheet" href="style.css">
+    <title>نظام إدارة مرضى أطفال القمر</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="patient-portal">
     <header>
-        <h1>مرحبًا بكم في عيادتنا الطبية</h1>
-        <nav>
-            <ul>
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">الأطباء</a></li>
-                <li><a href="#">الخدمات</a></li>
-                <li><a href="#">اتصل بنا</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>مركز رعاية أطفال القمر</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">الرئيسية</a></li>
+                    <li><a href="patient/appointments.html">المواعيد</a></li>
+                    <li><a href="patient/medical-record.html">ملفي الطبي</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero">
-        <h2>أفضل رعاية صحية لك ولعائلتك</h2>
-        <p>احجز موعدًا مع أفضل الأطباء بسهولة</p>
-        <a href="#" class="btn">احجز الآن</a>
-    </section>
+    <main class="container">
+        <section class="emergency-alert">
+            <button id="emergency-btn" class="emergency-btn">
+                � طلب طوارئ
+            </button>
+        </section>
 
-    <section class="services">
-        <h2>خدماتنا الطبية</h2>
-        <div class="service">
-            <h3>الاستشارات الطبية</h3>
-            <p>استشر أطباء متخصصين في مختلف المجالات.</p>
-        </div>
-        <div class="service">
-            <h3>الفحوصات الشاملة</h3>
-            <p>إجراء فحوصات دقيقة وتشخيص دقيق.</p>
-        </div>
-        <div class="service">
-            <h3>الرعاية المنزلية</h3>
-            <p>خدمات طبية احترافية في راحة منزلك.</p>
-        </div>
-    </section>
+        <section class="announcements">
+            <h2>الإعلانات والتحديثات</h2>
+            <div class="announcement-card">
+                <h3>توفر أدوية جديدة</h3>
+                <p>تم توفير الدواء الجديد XYZ في الصيدلية الرئيسية</p>
+                <span class="date">15 مايو 2023</span>
+            </div>
+            <!-- المزيد من الإعلانات -->
+        </section>
+
+        <section class="guidelines">
+            <h2>الإرشادات الطبية</h2>
+            <div class="guideline-categories">
+                <div class="category">
+                    <h3>الحماية من الضوء</h3>
+                    <p>إرشادات حول الملابس الواقية والنظارات</p>
+                </div>
+                <!-- المزيد من التصنيفات -->
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>جميع الحقوق محفوظة © 2025 عيادتنا الطبية</p>
+        <div class="container">
+            <p>© 2023 مركز رعاية أطفال القمر. جميع الحقوق محفوظة.</p>
+        </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

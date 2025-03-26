@@ -2,79 +2,37 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حجز المواعيد - نظام أطفال القمر</title>
+    <title>مواعيدي</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body class="patient-portal">
     <header>
         <div class="container">
-            <h1>مركز رعاية أطفال القمر</h1>
+            <h1>إدارة المواعيد</h1>
             <nav>
                 <ul>
                     <li><a href="../../index.html">الرئيسية</a></li>
+                    <li><a href="dashboard.html">اللوحة</a></li>
                     <li><a href="appointments.html" class="active">المواعيد</a></li>
-                    <li><a href="medical-record.html">ملفي الطبي</a></li>
+                    <li><a href="medical-record.html">الملف الطبي</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="container">
-        <h2>حجز موعد جديد</h2>
-        
-        <div class="appointment-form">
-            <form id="book-appointment">
+        <section class="appointment-form">
+            <h2>حجز موعد جديد</h2>
+            <form>
                 <div class="form-group">
                     <label for="doctor">اختر الطبيب:</label>
-                    <select id="doctor" required>
-                        <option value="">-- اختر الطبيب --</option>
-                        <option value="dr1">د. أحمد محمد - أخصائي جلدية</option>
-                        <option value="dr2">د. سارة خالد - أخصائية عيون</option>
+                    <select id="doctor">
+                        <option value="">-- اختر طبيب --</option>
                     </select>
                 </div>
-                
-                <div class="form-group">
-                    <label for="date">اختر التاريخ:</label>
-                    <input type="date" id="date" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="time">اختر الوقت:</label>
-                    <input type="time" id="time" required>
-                </div>
-                
                 <button type="submit">حجز الموعد</button>
             </form>
-        </div>
-        
-        <h2>مواعيدي القادمة</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>التاريخ</th>
-                    <th>الوقت</th>
-                    <th>الطبيب</th>
-                    <th>الحالة</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>15/06/2023</td>
-                    <td>10:00 ص</td>
-                    <td>د. أحمد محمد</td>
-                    <td>مؤكد</td>
-                </tr>
-            </tbody>
-        </table>
+        </section>
     </main>
-
-    <footer>
-        <div class="container">
-            <p>© 2023 مركز رعاية أطفال القمر. جميع الحقوق محفوظة.</p>
-        </div>
-    </footer>
-
-    <script src="../../js/main.js"></script>
 </body>
 </html>
